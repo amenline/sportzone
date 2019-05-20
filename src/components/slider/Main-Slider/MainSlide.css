@@ -1,0 +1,15 @@
+.carousel-container {
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-img {
+    height: 100%;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
