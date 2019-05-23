@@ -102,7 +102,7 @@
 .nested-items {
 	position: absolute;
 	width: 150px;
-	display: inline-flex;
+	display: flex;
 	top: 45px;
 	padding: 0px;
 	margin: 0px !important;
@@ -123,8 +123,7 @@
 	padding: 3px 0px 3px 5px;
 }
 
-.drop-down {
-	/* position: absolute; */
-	display: inline-flex;
+.subject {
+	display: flex;
 	flex-direction: column;
 }
