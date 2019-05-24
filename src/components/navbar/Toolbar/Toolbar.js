@@ -15,7 +15,7 @@ const Toolbar = (props) => {
 				<div className='toolbar-logo'> <Link to="/"><img src={Logo} alt="Logo" style={{width: '180px'}} /></Link> </div>
 				<div className='toolbar-navigation-items'>
 					<ul>
-						<span className='subject'>
+						<span className='toolbar-dropdown'>
 							<Nested>
 								<li className='link nested'>News</li>
 								<ul className='nested-items'>
@@ -26,7 +26,7 @@ const Toolbar = (props) => {
 							</Nested>
 						</span>
 						
-						<span className='subject'>
+						<span className='toolbar-dropdown'>
 							<Nested>
 								<li className='link nested'>Competitions</li>
 								<ul className='nested-items'>
@@ -41,7 +41,7 @@ const Toolbar = (props) => {
 							</Nested>
 						</span>
 						
-						<span className='subject'>
+						<span className='toolbar-dropdown'>
 							<Nested>
 								<li className='link nested'>Teams</li>
 								<ul className='nested-items'>
@@ -60,7 +60,7 @@ const Toolbar = (props) => {
 							</Nested>
 						</span>
 						
-						<span className='subject'>
+						<span className='toolbar-dropdown'>
 							<Nested>
 								<li className='link nested'>Matches</li>
 								<ul className='nested-items'>

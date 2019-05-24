@@ -12,10 +12,10 @@ const SideDrawer = props => {
 	return (
 		<nav className={drawerClasses} >
 			<ul>
-				<span className='subject'>
+				<span className='drawer-container'>
 					<Nested>
-						<li className='link nested'>News</li>
-						<ul className='nested-items'>
+						<li className=''>News</li>
+						<ul className=''>
 							<li><Link to="/news/trending">Trending</Link></li>
 							<li><Link to="/news/transferes">Transferes</Link></li>
 							<li><Link to="/news/match-highlights">Match Highlights</Link></li>
@@ -23,10 +23,10 @@ const SideDrawer = props => {
 					</Nested>
 				</span>
 				
-				<span className='subject'>
+				<span className='drawer-container'>
 					<Nested>
-						<li className='link nested'>Competitions</li>
-						<ul className='nested-items'>
+						<li className=''>Competitions</li>
+						<ul className=''>
 							<li><Link to="/competitions/epl">EPL</Link></li>
 							<li><Link to="/competitions/laliga">La Liga</Link></li>
 							<li><Link to="/competitions/italian-league">Italian League</Link></li>
@@ -38,10 +38,10 @@ const SideDrawer = props => {
 					</Nested>
 				</span>
 				
-				<span className='subject'>
+				<span className='drawer-container'>
 					<Nested>
-						<li className='link nested'>Teams</li>
-						<ul className='nested-items'>
+						<li className=''>Teams</li>
+						<ul className=''>
 							<li><Link to="/teams/arsenal">Arsenal</Link></li>
 							<li><Link to="/teams/ac-milan">AC Milan</Link></li>
 							<li><Link to="/teams/barcelona">Barcelona</Link></li>
@@ -57,10 +57,10 @@ const SideDrawer = props => {
 					</Nested>
 				</span>
 				
-				<span className='subject'>
+				<span className='drawer-container'>
 					<Nested>
-						<li className='link nested'>Matches</li>
-						<ul className='nested-items'>
+						<li className=''>Matches</li>
+						<ul className=''>
 							<li><Link to="/matches/lineups">Line Ups</Link></li>
 							<li><Link to="/matches/scores">Live Scores</Link></li>
 						</ul>
