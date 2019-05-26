@@ -12,7 +12,7 @@ const Toolbar = (props) => {
 				<div className='toolbar-toggle-button'>
 					<DrawerToggleButton click={props.drawerToggle} />
 				</div>
-				<div className='toolbar-logo'> <Link to="/"><img src={Logo} alt="Logo" style={{width: '180px'}} /></Link> </div>
+				<div className='toolbar-logo'> <Link to="/" onClick={props.drawerToggle}><img src={Logo} alt="Logo" style={{width: '180px'}} /></Link> </div>
 				<div className='toolbar-navigation-items'>
 					<ul>
 						<span className='toolbar-dropdown'>
