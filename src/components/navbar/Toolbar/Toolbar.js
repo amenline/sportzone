@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import Nested from '../Nested/Nested';
 import Logo from './sportzone-logo.svg';
+// import Socials from '../Socials/Socials';
 import './Toolbar.css';
 
 const Toolbar = (props) => {
@@ -73,6 +74,7 @@ const Toolbar = (props) => {
 					</ul>
 				</div>
 				<div className='spacer'/>
+				{/* <Socials /> */}
 			</nav>
 		</header>
 	)	
