@@ -37,7 +37,10 @@ class NavigationBar extends React.Component {
             drawerToggle={this.drawerToggleClickHandler}
             showdropdown={this.showDropdownMenu}
             />
-          <SideDrawer show={this.state.sideDrawerOpen} toggledrawer={this.backdropClickHandler} />
+          <SideDrawer 
+            show={this.state.sideDrawerOpen} 
+            toggledrawer={this.backdropClickHandler} 
+            />
           {backdrop}
         </div>
       </nav>

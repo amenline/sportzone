@@ -17,7 +17,7 @@ const SideDrawer = props => {
 					{/* <span className='empty-space' /> */}
 					<span className='drawer-container'>
 						<Nested>
-							<li className=''>News</li>
+							<li className='dropdown-title'>News</li>
 							<ul className=''>
 								<li onClick={props.toggledrawer}><Link to="/news/trending">Trending</Link></li>
 								<li onClick={props.toggledrawer}><Link to="/news/transferes">Transferes</Link></li>
@@ -28,7 +28,7 @@ const SideDrawer = props => {
 					
 					<span className='drawer-container'>
 						<Nested>
-							<li className=''>Competitions</li>
+							<li className='dropdown-title'>Competitions</li>
 							<ul className=''>
 								<li onClick={props.toggledrawer}><Link to="/competitions/epl">EPL</Link></li>
 								<li onClick={props.toggledrawer}><Link to="/competitions/laliga">La Liga</Link></li>
@@ -43,7 +43,7 @@ const SideDrawer = props => {
 					
 					<span className='drawer-container'>
 						<Nested>
-							<li className=''>Teams</li>
+							<li className='dropdown-title'>Teams</li>
 							<ul className=''>
 								<li onClick={props.toggledrawer}><Link to="/teams/arsenal">Arsenal</Link></li>
 								<li onClick={props.toggledrawer}><Link to="/teams/ac-milan">AC Milan</Link></li>
@@ -62,7 +62,7 @@ const SideDrawer = props => {
 					
 					<span className='drawer-container'>
 						<Nested>
-							<li className=''>Matches</li>
+							<li className='dropdown-title'>Matches</li>
 							<ul className=''>
 								<li onClick={props.toggledrawer}><Link to="/matches/lineups">Line Ups</Link></li>
 								<li onClick={props.toggledrawer}><Link to="/matches/scores">Live Scores</Link></li>
