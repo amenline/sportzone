@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# custom
+/client
+/routes/api/products.js
+/models/products.model.js
+/api_list.txt
