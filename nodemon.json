@@ -1,0 +1,7 @@
+{
+  "env": {
+    "DB_URI": "mongodb+srv://badsector:Vanessa1-@sportzone-0abow.mongodb.net/test?retryWrites=true&w=majority",
+    "DB_LOCAL": "mongodb://127.0.0.1:27017/test",
+    "JWT_KEY": "/?mern=MongoDB+Express+ReactJS+NodeJS&5P0RT20NE"
+  }
+}
