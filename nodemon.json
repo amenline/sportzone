@@ -1,6 +1,0 @@
-{
-  "env": {
-    "DB_URI": "YOUR MONGO ATLAS URI",
-    "JWT_KEY": "YOUR JWT KEY"
-  }
-}
