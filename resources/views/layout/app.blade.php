@@ -10,13 +10,12 @@
         <header>
             @include('partials.navbar')
         </header>
-        <main>
+        <main id="app">
             @yield('content')
         </main>
         <footer>
             @include('partials.footer')
         </footer>
-        
         {{-- JS --}}
         @include('partials.scripts')
     </body>

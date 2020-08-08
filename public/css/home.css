@@ -1,0 +1,14 @@
+.home-carousel-text {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.recent-scores {
+    background: #444444;
+    color: #ffffff;
+    font-size: 1rem;
+    overflow-y: scroll;
+}
+
+.hr {
+    border-color: #fff;
+}
