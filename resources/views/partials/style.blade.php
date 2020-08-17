@@ -11,7 +11,11 @@
         margin: 0;
     }
     nav {
-        background-color: #d9e1e8;
+        background-color: rgba(0, 0, 0, 0);
+        /* background-color: #d9e1e8; */
+        /* background-color: #b2b8b9; */
+        /* background: linear-gradient(150deg,#444444 15%,#2a7ad5 70%,#05d5ff 94%); */
+        /* background: linear-gradient(150deg,#d9e1e8 15%,#05d5ff 70%); */
     }
     .nav a{
         font-size: 1rem !important;

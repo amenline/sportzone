@@ -1,14 +1,45 @@
 .home-carousel-text {
     background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
 }
-
-.recent-scores {
-    background: #444444;
-    color: #ffffff;
-    font-size: 1rem;
+.recent-scores-md {
+    max-height: 22rem;
     overflow-y: scroll;
+    color: #ffffff;
+    font-size: 0.7rem;
+    color: #ffffff;
+    font-size: 0.7rem;
+    transform-origin: 0;
+    background: linear-gradient(150deg,#444444 15%,#2a7ad5 70%,#444 94%);
+    z-index: 0;
 }
-
+.recent-scores {
+    /* background: #444444; */
+    color: #ffffff;
+    font-size: 0.7rem;
+    overflow-y: scroll;
+    transform-origin: 0;
+    background: linear-gradient(150deg,#444444 15%,#2a7ad5 70%,#444 94%);
+    z-index: 0;
+}
 .hr {
     border-color: #fff;
+}
+.score-text {
+    color: #ccc;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 0.3rem;
+}
+.score-card {
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.score-card:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
