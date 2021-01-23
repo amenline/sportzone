@@ -19,7 +19,7 @@ module.exports = {
         fonts: "#F2F2F2",
       },
       backgroundImage: theme => ({
-        'nav-wave': "url('/wave.svg')",
+        'nav-wave': "url('/images/wave.svg')",
        })
     },
   },

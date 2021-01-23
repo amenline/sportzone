@@ -1,3 +1,4 @@
+import Footer from "./footer";
 import Head from "next/head";
 import Navbar from "./navbar";
 
@@ -10,19 +11,13 @@ const Layout: React.FC<Props> = ({ children, title }) => {
     <div>
       <Head>
         <title>{title}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
-      <Navbar />
+      <header>
+        <Navbar />
+      </header>
       <main className="container m-auto">{children}</main>
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by AMENLINE
-        </a>
-      </footer>
+      <Footer />
     </div>
   );
 };
