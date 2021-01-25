@@ -1,17 +1,18 @@
-import Head from 'next/head';
+// import Head from 'next/head'
 
-const Fixtures = () => {
+import Layout from "../../components/layout";
+
+const Fixtures: React.FC = () => {
   return (
-    <div>
-      <Head>
-        <title>Sportzone - Fixtures</title>
-      </Head>
-
-      <main>
-        <div>Hello</div>
-      </main>
-    </div>
-  )
-}
+    <Layout title="Sportzone - Fixtures">
+      <h1>This is Fixtures</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora et est
+        voluptatem veritatis vero ipsa minima at eaque, ab ipsam tenetur
+        accusamus, eligendi porro magni natus aut doloremque! Ducimus, quas?
+      </p>
+    </Layout>
+  );
+};
 
 export default Fixtures;

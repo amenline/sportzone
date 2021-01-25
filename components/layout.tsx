@@ -16,7 +16,9 @@ const Layout: React.FC<Props> = ({ children, title }) => {
       <header>
         <Navbar />
       </header>
-      <main className="container m-auto">{children}</main>
+      <main className="container m-auto md:py-16 md:px-5 py-8 px-2">
+        {children}
+      </main>
       <Footer />
     </div>
   );

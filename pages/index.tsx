@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 const Home: React.FC = () => {
   return (
     <Layout title="Sportzone - Home">
+      <h1>This is Home</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora et est
         voluptatem veritatis vero ipsa minima at eaque, ab ipsam tenetur

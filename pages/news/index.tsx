@@ -1,23 +1,17 @@
-import Head from "next/head";
+// import Head from 'next/head'
 
-const News = () => {
+import Layout from "../../components/layout";
+
+const News: React.FC = () => {
   return (
-    <div>
-      <Head>
-        <title>Sportzone - News</title>
-      </Head>
-
-      <main>
-        <h1>The Next Big Thing</h1>
-        <div>Hello</div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
-          dignissimos, sed vitae nobis atque sequi esse eos recusandae deleniti
-          ad placeat incidunt voluptas odit! Reiciendis aliquam quae odio
-          delectus. Cum?
-        </div>
-      </main>
-    </div>
+    <Layout title="Sportzone - News">
+      <h1>This is News</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora et est
+        voluptatem veritatis vero ipsa minima at eaque, ab ipsam tenetur
+        accusamus, eligendi porro magni natus aut doloremque! Ducimus, quas?
+      </p>
+    </Layout>
   );
 };
 

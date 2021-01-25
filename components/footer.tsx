@@ -8,19 +8,19 @@ const Footer: React.FC = () => {
           <h2 className="uppercase font-bold mb-3">Quick Links</h2>
           <nav className="text-xs">
             <Link href="#">
-              <a className="block p-1">News</a>
+              <a className="block py-1 hover:text-gray-300">News</a>
             </Link>
             <Link href="#">
-              <a className="block p-1">Upcoming matches</a>
+              <a className="block py-1 hover:text-gray-300">Upcoming matches</a>
             </Link>
             <Link href="#">
-              <a className="block p-1">Played matches</a>
+              <a className="block py-1 hover:text-gray-300">Played matches</a>
             </Link>
             <Link href="#">
-              <a className="block p-1">Competitions</a>
+              <a className="block py-1 hover:text-gray-300">Competitions</a>
             </Link>
             <Link href="#">
-              <a className="block p-1">Teams</a>
+              <a className="block py-1 hover:text-gray-300">Teams</a>
             </Link>
           </nav>
         </section>
@@ -28,38 +28,88 @@ const Footer: React.FC = () => {
           <h2 className="uppercase font-bold mb-3">Top Links</h2>
           <nav className="text-xs">
             <Link href="#">
-              <a className="block p-1">Champions League</a>
+              <a className="block py-1 hover:text-gray-300">Champions League</a>
             </Link>
             <Link href="#">
-              <a className="block p-1">EPL</a>
+              <a className="block py-1 hover:text-gray-300">EPL</a>
             </Link>
             <Link href="#">
-              <a className="block p-1">Chealse</a>
+              <a className="block py-1 hover:text-gray-300">Chealse</a>
             </Link>
             <Link href="#">
-              <a className="block p-1">Liverpool</a>
+              <a className="block py-1 hover:text-gray-300">Liverpool</a>
             </Link>
             <Link href="#">
-              <a className="block p-1">Transfer news</a>
+              <a className="block py-1 hover:text-gray-300">Transfer news</a>
             </Link>
           </nav>
         </section>
-        <section>
+        <section className="hidden md:block">
           <h2 className="uppercase font-bold mb-3">Follow us</h2>
           <nav className="text-xs">
             <Link href="#">
-              <a className="block p-1">Facebook</a>
+              <a
+                className="block py-1 hover:text-gray-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="pr-2 inline-block"
+                  src="/images/facebook.svg"
+                  alt="Facebook"
+                />
+                Facebook
+              </a>
             </Link>
             <Link href="#">
-              <a className="block p-1">Twitter</a>
+              <a
+                className="block py-1 hover:text-gray-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="pr-2 inline-block"
+                  src="/images/twitter.svg"
+                  alt="Twitter"
+                />
+                Twitter
+              </a>
             </Link>
             <Link href="#">
-              <a className="block p-1">Instagram</a>
+              <a
+                className="block py-1 hover:text-gray-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="pr-2 inline-block"
+                  src="/images/instagram.svg"
+                  alt="Instagram"
+                />
+                Instagram
+              </a>
             </Link>
           </nav>
         </section>
       </div>
       <section className="text-center py-4">
+        <nav className="md:hidden flex justify-center">
+          <Link href="#">
+            <a className="p-2 m-1" target="_blank" rel="noopener noreferrer">
+              <img src="/images/facebook.svg" alt="Facebook" />
+            </a>
+          </Link>
+          <Link href="#">
+            <a className="p-2 m-1" target="_blank" rel="noopener noreferrer">
+              <img src="/images/twitter.svg" alt="Twitter" />
+            </a>
+          </Link>
+          <Link href="#">
+            <a className="p-2 m-1" target="_blank" rel="noopener noreferrer">
+              <img src="/images/instagram.svg" alt="Instagram" />
+            </a>
+          </Link>
+        </nav>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
