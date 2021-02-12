@@ -7,19 +7,19 @@ const Footer: React.FC = () => {
         <section>
           <h2 className="uppercase font-bold mb-3">Quick Links</h2>
           <nav className="text-xs">
-            <Link href="#">
+            <Link href="/home">
+              <a className="block py-1 hover:text-gray-300">Home</a>
+            </Link>
+            <Link href="/news">
               <a className="block py-1 hover:text-gray-300">News</a>
             </Link>
-            <Link href="#">
-              <a className="block py-1 hover:text-gray-300">Upcoming matches</a>
+            <Link href="/fixtures">
+              <a className="block py-1 hover:text-gray-300">Fixtures</a>
             </Link>
-            <Link href="#">
-              <a className="block py-1 hover:text-gray-300">Played matches</a>
-            </Link>
-            <Link href="#">
+            <Link href="/components">
               <a className="block py-1 hover:text-gray-300">Competitions</a>
             </Link>
-            <Link href="#">
+            <Link href="Teams">
               <a className="block py-1 hover:text-gray-300">Teams</a>
             </Link>
           </nav>

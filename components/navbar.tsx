@@ -1,8 +1,24 @@
 import Link from "next/link";
+import MobileNav from "./MobileNav";
+
+interface Props {
+  link: string;
+}
+
+export const NavItem: React.FC<Props> = ({ children, link }) => {
+  return (
+    <li className="p-2 m-1 rounded-md hover:bg-primary-500 hover:text-white">
+      <Link href={`/${link}`}>
+        <a>{children}</a>
+      </Link>
+    </li>
+  );
+};
 
 const Navbar: React.FC = () => {
   return (
     <>
+      <div className="md:hidden fixed top-0 right-0 h-full w-full bg-gray-500 bg-opacity-50" />
       <nav className="px-3 flex justify-center bg-primary-300 bg-nav-wave bg-no-repeat bg-center bg-cover items-center">
         <Link href="/">
           <a className="py-2">
@@ -11,33 +27,13 @@ const Navbar: React.FC = () => {
         </Link>
         <div className="flex-1"></div>
         <img className="md:hidden pr-2" src="/images/menu.svg" alt="Menu" />
-        <div className="md:hidden absolute top-0 right-0 h-full sm:w-1/2 w-4/6 bg-white shadow-2xl">
-          <ul>
-            <li></li>
-          </ul>
-        </div>
         <ul className="hidden md:flex m-1 text-fonts text-base font-semibold">
-          <li className="p-2 m-1 hover:bg-primary-500">
-            <Link href="/news">
-              <a>News</a>
-            </Link>
-          </li>
-          <li className="p-2 m-1 rounded-md hover:bg-primary-500 hover:text-white">
-            <Link href="/competetions">
-              <a>Competitions</a>
-            </Link>
-          </li>
-          <li className="p-2 m-1 rounded-md hover:bg-primary-500 hover:text-white">
-            <Link href="/teams">
-              <a>Teams</a>
-            </Link>
-          </li>
-          <li className="p-2 m-1 rounded-md hover:bg-primary-500 hover:text-white">
-            <Link href="/fixtures">
-              <a>Fixtures</a>
-            </Link>
-          </li>
+          <NavItem link="news">News</NavItem>
+          <NavItem link="competetions">Competitions</NavItem>
+          <NavItem link="teams">Teams</NavItem>
+          <NavItem link="fixtures">Fixtures</NavItem>
         </ul>
+        <MobileNav />
       </nav>
     </>
   );
