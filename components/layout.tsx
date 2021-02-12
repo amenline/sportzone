@@ -8,7 +8,7 @@ interface Props {
 
 const Layout: React.FC<Props> = ({ children, title }) => {
   return (
-    <div>
+    <div className="font-body">
       <Head>
         <title>{title}</title>
         <link rel="icon" href="/images/favicon.ico" />

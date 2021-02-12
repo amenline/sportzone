@@ -20,7 +20,23 @@ module.exports = {
       },
       backgroundImage: theme => ({
         'nav-wave': "url('/images/wave.svg')",
-       })
+      }),
+      fontFamily: {
+        body: [
+          'Poppins',
+          'Roboto',
+          'ui-sans-serif',
+          'system-ui',
+          '-apple-system',
+        ]
+      },
+      minWidth: {
+        '0': '0',
+         '1/4': '25%',
+         '1/2': '50%',
+         '3/4': '75%',
+         'full': '100%',
+       }
     },
   },
   variants: {

@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
         </a>
       </Link>
       <div className="flex-1"></div>
-      <img className="md:hidden pr-2" src="/images/menu.svg" alt="Menu" />
+      <img className="md:hidden pr-2" src="/images/menu.svg" alt="Menu icon" />
       <ul className="hidden md:flex m-1 text-fonts text-base font-semibold">
         <li className="p-2 m-1 hover:bg-primary-500">
           <Link href="/news">
