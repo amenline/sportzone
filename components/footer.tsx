@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
             <Link href="/components">
               <a className="block py-1 hover:text-gray-300">Competitions</a>
             </Link>
-            <Link href="Teams">
+            <Link href="/teams">
               <a className="block py-1 hover:text-gray-300">Teams</a>
             </Link>
           </nav>

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
 
@@ -7,7 +8,7 @@ interface Props {
 
 export const NavItem: React.FC<Props> = ({ children, link }) => {
   return (
-    <li className="p-2 m-1 rounded-md hover:bg-primary-500 hover:text-white">
+    <li className="p-2 m-1 rounded-md hover:bg-primary-500 hover:text-white transition-all ease-linear duration-200">
       <Link href={`/${link}`}>
         <a>{children}</a>
       </Link>
@@ -16,9 +17,9 @@ export const NavItem: React.FC<Props> = ({ children, link }) => {
 };
 
 const Navbar: React.FC = () => {
+  const [openDrawer, setOpenDrawer] = useState(false);
   return (
     <>
-      <div className="md:hidden fixed top-0 right-0 h-full w-full bg-gray-500 bg-opacity-50" />
       <nav className="px-3 flex justify-center bg-primary-300 bg-nav-wave bg-no-repeat bg-center bg-cover items-center">
         <Link href="/">
           <a className="py-2">
@@ -26,14 +27,19 @@ const Navbar: React.FC = () => {
           </a>
         </Link>
         <div className="flex-1"></div>
-        <img className="md:hidden pr-2" src="/images/menu.svg" alt="Menu" />
+        <img
+          className="md:hidden pr-2"
+          src="/images/menu.svg"
+          alt="Menu drawer button"
+          onClick={() => setOpenDrawer(true)}
+        />
         <ul className="hidden md:flex m-1 text-fonts text-base font-semibold">
           <NavItem link="news">News</NavItem>
           <NavItem link="competetions">Competitions</NavItem>
           <NavItem link="teams">Teams</NavItem>
           <NavItem link="fixtures">Fixtures</NavItem>
         </ul>
-        <MobileNav />
+        <MobileNav open={openDrawer} setOpen={setOpenDrawer} />
       </nav>
     </>
   );
