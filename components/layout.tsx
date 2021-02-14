@@ -1,6 +1,6 @@
-import Footer from "./footer";
+import Footer from "./Footer";
 import Head from "next/head";
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 
 interface Props {
   title: string;
